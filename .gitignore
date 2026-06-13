@@ -1,0 +1,11 @@
+# Python / Django
+env/
+venv/
+__pycache__/
+*.py[cod]
+db.sqlite3
+staticfiles/
+.env
+server.log
+waitress.log
+waitress.err.log

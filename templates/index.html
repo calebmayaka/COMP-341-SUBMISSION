@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -18,23 +18,23 @@
 		<meta property="og:title" content="Nyama Choma Base | Authentic Kenyan Restaurant in Nairobi">
 		<meta property="og:description" content="Experience authentic Kenyan hospitality at Nyama Choma Base on Tom Mboya Street, Nairobi. Savour perfectly seasoned nyama choma served with ugali and traditional kienyeji dishes.">
 		<meta property="og:url" content="https://431.calebmayaka.com/">
-		<meta property="og:image" content="https://431.calebmayaka.com/static/img/preview.JPG">
+		<meta property="og:image" content="https://431.calebmayaka.com{% static 'img/preview.JPG' %}">
 		<meta property="og:locale" content="en_KE">
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Nyama Choma Base | Authentic Kenyan Restaurant in Nairobi">
 		<meta name="twitter:description" content="Authentic Kenyan nyama choma, ugali and kienyeji dishes on Tom Mboya Street, Nairobi.">
-		<meta name="twitter:image" content="https://431.calebmayaka.com/static/img/preview.JPG">
+		<meta name="twitter:image" content="https://431.calebmayaka.com{% static 'img/preview.JPG' %}">
 
-		<link rel="icon" type="image/jpeg" href="./img/preview.JPG">
-		<link rel="apple-touch-icon" href="./img/preview.JPG">
+		<link rel="icon" type="image/jpeg" href="{% static 'img/preview.JPG' %}">
+		<link rel="apple-touch-icon" href="{% static 'img/preview.JPG' %}">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
 		<script type="application/ld+json">
 		{
@@ -45,7 +45,7 @@
 			"servesCuisine": "Kenyan",
 			"priceRange": "$$",
 			"url": "https://431.calebmayaka.com/",
-			"image": "https://431.calebmayaka.com/static/img/preview.JPG",
+			"image": "https://431.calebmayaka.com{% static 'img/preview.JPG' %}",
 			"email": "ombogomayaka@gmail.com",
 			"address": {
 				"@type": "PostalAddress",
@@ -76,9 +76,9 @@
 		<header id="go_to_top">
 			<div class="gradient">
 				<div class="container">
-					<h2 id="logo"><a href="index.html"> CHOMA BASE </a></h2>
-					<img id="open_menu" class="menu_icon show" src="./img/menu.png" >
-					<img id="close_menu" class="menu_icon" src="./img/x.png" >
+					<h2 id="logo"><a href="{% url 'index' %}"> CHOMA BASE </a></h2>
+					<img id="open_menu" class="menu_icon show" src="{% static 'img/menu.png' %}" >
+					<img id="close_menu" class="menu_icon" src="{% static 'img/x.png' %}" >
 					<nav>
 						<a href="#go_to_top" class="menu_link active"> Welcome </a>
 						<a href="#about" class="menu_link"> About </a>
@@ -98,7 +98,7 @@
 				<h2 class ="myname"> CALEB MAYAKA OMBOGO </h2> -->
 			</div>
 		</header>
-		
+
 		<main>
 			<section id="about" class="breakpoint">
 				<div class="content">
@@ -109,21 +109,21 @@
 					<h2><a href="#"> About us </a></h2>
 				</div>
 				<div class="img_container">
-					<img src="./img/choma.jpg" title="Stuffed tomatoes" alt="Stuffed tomatoes"> 
+					<img src="{% static 'img/choma.jpg' %}" title="Stuffed tomatoes" alt="Stuffed tomatoes">
 				</div>
 			</section>
-			
-			<section class="divider"> 
+
+			<section class="divider">
 					<h1 class="highlight"> Tasteful </h1>
 					<h1 class="topic"> recipes </h1>
 			</section>
-			
-			<section id="menu" class="breakpoint"> 
+
+			<section id="menu" class="breakpoint">
 				<div class="img_container">
-					<img class="align_end" src="./img/choma2.jfif" title="Fresh salad" alt="Fresh salad image"> 
-					<img class="align_end" src="./img/choma3.jfif" title="Fresh fancy salad" alt="Fresh fancy salad image">
-					<img class="align_start" src="./img/choma4.jfif" title="Mushroom dish with legumes" alt="Mushroom dish with legumes image">
-					<img class="align_start" src="./img/menu4.jpg" title="Dessert with lemon" alt="Dessert with lemon image">
+					<img class="align_end" src="{% static 'img/choma2.jfif' %}" title="Fresh salad" alt="Fresh salad image">
+					<img class="align_end" src="{% static 'img/choma3.jfif' %}" title="Fresh fancy salad" alt="Fresh fancy salad image">
+					<img class="align_start" src="{% static 'img/choma4.jfif' %}" title="Mushroom dish with legumes" alt="Mushroom dish with legumes image">
+					<img class="align_start" src="{% static 'img/menu4.jpg' %}" title="Dessert with lemon" alt="Dessert with lemon image">
 				</div>
 				<div class="content">
 					<h1 class="highlight"> Discover </h1>
@@ -133,13 +133,13 @@
 					<h2><a href="#"> View the full menu </a></h2>
 				</div>
 			</section>
-			
+
 			<section class="divider">
 					<h1 class="highlight"> The perfect </h1>
-					<h1 class="topic"> blend </h1>			
+					<h1 class="topic"> blend </h1>
 			</section>
-			
-			<section id="reservation" class="breakpoint"> 
+
+			<section id="reservation" class="breakpoint">
 				<div class="content">
 					<h1 class="highlight"> Culinary </h1>
 					<h1 class="topic"> delight </h1>
@@ -148,15 +148,15 @@
 					<h2><a href="#"> Make a reservation </a></h2>
 				</div>
 				<div class="img_container">
-					<img src="./img/meat.jpg" title="Meat and cheese" alt="Sandwiches image"> 
-					<img src="./img/sandwiches.jpg" title="Sandwiches" alt="Sandwiches image">
-				</div>			
+					<img src="{% static 'img/meat.jpg' %}" title="Meat and cheese" alt="Sandwiches image">
+					<img src="{% static 'img/sandwiches.jpg' %}" title="Sandwiches" alt="Sandwiches image">
+				</div>
 			</section>
-						
+
 		</main>
-		
+
 		<footer>
-			<div id="top"> 
+			<div id="top">
 				<a href="#go_to_top" class="menu_link">
 					<p id="arrow"> &lsaquo; </p>
 					<p>  Top </p>
@@ -176,14 +176,14 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div id="hours">
 					<h2> Hours </h2>
 					<div class="open_container">
 						<div class="open">
 							<p> Monday - Thursday </p>
 							<p> 5:30pm - 10:00pm </p>
-						</div>	
+						</div>
 						<div class="open">
 							<p> Friday & Saturday </p>
 							<p> 5:30pm - 11:00pm </p>
@@ -197,17 +197,17 @@
 			</div>
 			<div class="copyright_container">
 				<div id="copyright">
-						<div> 
+						<div>
 							<p> Copyright 2023 &copy; Caleb Mayaka | <a href="#"> Callycalex Technologies </a> Team </p>
 							<p> COMP 341 SUBMISSION  &copy; </p>
 						</div>
 						<div>
 							<p> Permissions and Copyright <span class="dot"> &middot; </span> ombogomayaka@gmail.com </p>
-						</div>			
+						</div>
 				</div>
-			</div>	
+			</div>
 		</footer>
-		
-		<script src="./js/scripts.js"> </script>
+
+		<script src="{% static 'js/scripts.js' %}"> </script>
 	</body>
 </html>
